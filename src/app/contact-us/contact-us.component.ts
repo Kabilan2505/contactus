@@ -5,6 +5,7 @@ import {MatIcon} from "@angular/material/icon";
 import {MatCard, MatCardContent, MatCardHeader, MatCardModule} from "@angular/material/card";
 import {MatDivider} from "@angular/material/divider";
 import {FlexModule} from "@angular/flex-layout";
+import {MatButton} from "@angular/material/button";
 
 @Component({
   selector: 'app-contact-us',
@@ -20,6 +21,7 @@ import {FlexModule} from "@angular/flex-layout";
     MatDivider,
     MatCardContent,
     FlexModule,
+    MatButton,
 
   ],
   templateUrl: './contact-us.component.html',
