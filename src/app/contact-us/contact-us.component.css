@@ -8,6 +8,7 @@
 body{
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
+  background: #4a4a4a;
 }
 .header-image{
   height: 50vh;
@@ -34,6 +35,7 @@ body{
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 1rem;
+
 }
 .content-info{
   /*width: 100%;*/
@@ -43,12 +45,14 @@ body{
   margin: 2rem 0;
   text-align: center;
   padding: 2rem 0;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 .contact-info div{
   margin: 0.8rem 0;
   padding: 1rem;
+
 }
 .contact-info .text{
   padding-top: 0.4rem;
@@ -59,6 +63,7 @@ body{
   width: 300px;
   display: block;
   /*border: 2px solid black;*/
+  background: white;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
@@ -92,6 +97,7 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  background: aliceblue;
   justify-content: center;
 }
 .contact-form form{
@@ -114,24 +120,11 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 0.6rem;
-}
-.send-btn{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: #fff;
-  background: #f7327a;
-  border: none;
-  border-radius: 5px;
-  padding: 0.7rem 1.5rem;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.send-btn:hover{
-  opacity: 0.8;
+  width: 600px;
+  height: 80px;
 }
 .contact-form > div img{
-  width: 65%;
+  width: 95%;
 }
 .contact-form > div{
 
@@ -142,12 +135,13 @@ body{
 
 }
 .contact{
-
-  width: 150px;
-  height: 50px;
-  border-radius: 10px;
-  box-shadow: rgba(18, 18, 232, 0.25) 0px 30px 60px -12px inset, rgb(60, 16, 252) 0px 18px 36px -18px inset;
+font-family: 'Open Sans', Harrington;
+  line-height: normal;
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-start;
 }
+
 .button{
   position: relative;
   display: inline-block;
@@ -164,6 +158,10 @@ body{
 }
 .button:last-child{
   width: 50%;
+  top: 20px;
+}
+.button:hover{
+  opacity: 0.8;
 }
 .button::before{
   content: ' ';
@@ -182,6 +180,10 @@ body{
 
 
 }
+/*.button:hover{*/
+/* width: 55%;*/
+/*  height: 70px;*/
+/*}*/
 .button i {
   position: relative;
   color: #ffff;
@@ -193,9 +195,13 @@ body{
 .footer{
   width: 100%;
   height: fit-content;
+  box-sizing: border-box;
+
+}
+.footer-img{
+  height: 600px;
   img{
     width: 100%;
-    height: 100vh;
   }
 }
 
