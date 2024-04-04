@@ -63,7 +63,7 @@ userEnquiryRequest: UserEnquiryRequest= new UserEnquiryRequest();
       firstName: ['', [Validators.required, Validators.maxLength(20), Validators.minLength(4), Validators.pattern('[a-zA-Z]+') ]],
       lastName:['', [Validators.required, Validators.maxLength(20), Validators.pattern('[a-zA-Z]+')]],
       email: ['',[Validators.required, Validators.email]],
-      phoneNumber: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(12), Validators.pattern('[0-9]+')]],
+      phoneNumber: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(10), Validators.pattern('[0-9]+')]],
       message: ['', [Validators.required]]
     })
   }

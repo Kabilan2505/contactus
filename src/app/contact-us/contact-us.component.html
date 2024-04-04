@@ -93,6 +93,18 @@
          <mat-form-field appearance="outline">
            <mat-label>Phone Number</mat-label>
            <input matInput placeholder="Phone Number" formControlName="phoneNumber"  id="phoneNumber">
+           <mat-error *ngIf="userEnquiry.get('phoneNumber')?.hasError('required')">
+             Phone Number is Required
+           </mat-error>
+           <mat-error *ngIf="userEnquiry.get('phoneNumber')?.hasError('maxlength')">
+             Phone Number can have maximum 10 numbers!
+           </mat-error>
+           <mat-error *ngIf="userEnquiry.get('phoneNumber')?.hasError('minlength')">
+             Phone Number can have minimum 10 numbers!
+           </mat-error>
+           <mat-error *ngIf="userEnquiry.get('phoneNumber')?.hasError('pattern')">
+             Phone Number should follow the pattern!
+           </mat-error>
          </mat-form-field>
        </div>
        <textarea class="form-control" rows = "5" matInput placeholder="Message" formControlName="message"  id="message"></textarea>
